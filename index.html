@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f4cdd8" />
+    <title>LATIFA BIRTHDAY — Eternal Bloom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Cinzel:wght@600;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="petals" aria-hidden="true"></canvas>
+    <div class="ambient-orb orb-one" aria-hidden="true"></div>
+    <div class="ambient-orb orb-two" aria-hidden="true"></div>
+
+    <main>
+      <section id="intro" class="screen intro-screen active" aria-label="Introduction">
+        <div class="bloom-mark" aria-hidden="true">
+          <span class="bloom-petal p1"></span><span class="bloom-petal p2"></span>
+          <span class="bloom-petal p3"></span><span class="bloom-petal p4"></span>
+        </div>
+
+        <article class="welcome-card" id="welcomeCard">
+          <button class="letter-seal" id="letterSeal" aria-label="Découvrir la lettre">
+            <span>L</span>
+          </button>
+          <p class="card-kicker">UNE LETTRE POUR</p>
+          <h1>Latifa</h1>
+          <p class="card-subtitle">LATIFA BIRTHDAY</p>
+        </article>
+
+        <button class="ribbon" id="ribbon" aria-label="Défaire le ruban">
+          <span class="ribbon-knot"></span>
+          <span class="ribbon-tail tail-left"></span>
+          <span class="ribbon-tail tail-right"></span>
+        </button>
+
+        <article class="envelope" id="envelope" aria-label="Enveloppe">
+          <div class="envelope-back"></div>
+          <div class="letter-peek" aria-hidden="true"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-front"></div>
+        </article>
+
+        <article class="letter" id="letter" aria-label="Lettre">
+          <div class="letter-page">
+            <p class="letter-date">À Latifa</p>
+            <div class="letter-copy">
+              <p>Chère Latifa,</p>
+              <p>À l’occasion de cette nouvelle année, je prends le temps de t’écrire quelques mots pour te rappeler à quel point elle mérite d’être célébrée. Elle s’ouvre avec son lot de possibilités, de découvertes et de beaux moments encore à venir.</p>
+              <p>Il y a dans ta présence une élégance qui ne tient pas seulement aux apparences : elle se retrouve dans ta douceur, ton sourire, ta sincérité et la manière naturelle dont tu accordes de l’attention aux personnes qui t’entourent. Tu as cette lumière calme qui rend les instants plus chaleureux et les souvenirs plus précieux.</p>
+              <p>Que cette année soit douce avec toi. Que tes projets trouvent leur chemin, que tes efforts soient récompensés et que chacune de tes réussites te donne encore plus confiance en toi. Puissent tes rêves te guider sans jamais perdre cette belle sensibilité qui fait toute ta singularité.</p>
+              <p>Je souhaite que tu continues à avancer avec courage, entourée de personnes qui savent reconnaître ta valeur. Que chaque journée t’offre une raison d’être fière de toi, même pour les petites victoires que personne ne voit.</p>
+              <p>Cette lettre est aussi une manière simple de te dire que ton parcours compte, que ta personnalité compte, et que la place que tu occupes mérite d’être célébrée. Garde près de toi tout ce qui te fait sourire et n’oublie jamais tout ce que tu es capable de construire.</p>
+              <p>Puissent les prochains chapitres être remplis de bonheur, de belles rencontres, de réalisations importantes et de moments que tu garderas longtemps dans le cœur.</p>
+              <p>Je te souhaite une belle nouvelle année, Latifa. ✨</p>
+            </div>
+            <div class="signature-ornament" aria-hidden="true">❦</div>
+            <p class="signature">TON AMI SAÏD <span aria-hidden="true">♡</span></p>
+          </div>
+        </article>
+
+        <button class="continue-button" id="continueButton">
+          Continuer notre aventure <span aria-hidden="true">✨</span>
+        </button>
+      </section>
+
+      <section id="universe" class="screen universe-screen" aria-label="L’univers de Latifa">
+        <header class="universe-header">
+          <p>UNE FÊTE DE DOUCEUR</p>
+          <h2>L’univers de Latifa</h2>
+        </header>
+        <div class="story-progress" aria-label="Progression"><span class="story-step" id="journeyStep">Étape 1 sur 4</span></div>
+
+        <div class="universe-panel" id="reasons" role="tabpanel">
+          <h3 class="stage-heading">Dix belles raisons</h3>
+          <div class="reasons-grid">
+            <button class="reason" style="--i:0"><span class="reason-number">01</span><span class="reason-title">Ta présence</span><span class="reason-text">Elle apporte une chaleur qui rassure.</span></button>
+            <button class="reason" style="--i:1"><span class="reason-number">02</span><span class="reason-title">Ta lumière</span><span class="reason-text">Elle rend les instants ordinaires plus beaux.</span></button>
+            <button class="reason" style="--i:2"><span class="reason-number">03</span><span class="reason-title">Ton sourire</span><span class="reason-text">Il a quelque chose de naturellement lumineux.</span></button>
+            <button class="reason" style="--i:3"><span class="reason-number">04</span><span class="reason-title">Ta douceur</span><span class="reason-text">Elle transforme les regards et les paroles.</span></button>
+            <button class="reason" style="--i:4"><span class="reason-number">05</span><span class="reason-title">Ta sincérité</span><span class="reason-text">Elle donne toute sa valeur aux liens.</span></button>
+            <button class="reason" style="--i:5"><span class="reason-number">06</span><span class="reason-title">Ton élégance</span><span class="reason-text">Elle se retrouve dans chaque geste.</span></button>
+            <button class="reason" style="--i:6"><span class="reason-number">07</span><span class="reason-title">Ton énergie</span><span class="reason-text">Elle accompagne les plus beaux projets.</span></button>
+            <button class="reason" style="--i:7"><span class="reason-number">08</span><span class="reason-title">Ta confiance</span><span class="reason-text">Elle fait grandir ce qui compte.</span></button>
+            <button class="reason" style="--i:8"><span class="reason-number">09</span><span class="reason-title">Ton cœur</span><span class="reason-text">Il donne une place particulière à chacun.</span></button>
+            <button class="reason" style="--i:9"><span class="reason-number">10</span><span class="reason-title">Ta singularité</span><span class="reason-text">Elle rend ton chemin précieux.</span></button>
+          </div>
+        </div>
+
+        <div class="universe-panel active" id="planets" role="tabpanel">
+          <h3 class="stage-heading">Six petits mondes à découvrir</h3>
+          <div class="planet-system">
+            <button class="planet planet-complicity" data-title="Complicité" data-copy="Ces regards qui comprennent avant même les mots."><span class="planet-core"></span><span>Complicité</span></button>
+            <button class="planet planet-memories" data-title="Souvenirs" data-copy="Les instants précieux gardent longtemps leur lumière."><span class="planet-core"></span><span>Souvenirs</span></button>
+            <button class="planet planet-friendship" data-title="Amitié" data-copy="Un lien qui accueille, écoute et accompagne."><span class="planet-core"></span><span>Amitié</span></button>
+            <button class="planet planet-happiness" data-title="Bonheur" data-copy="Ce doux éclat qui fait rayonner les jours."><span class="planet-core"></span><span>Bonheur</span></button>
+            <button class="planet planet-future" data-title="Avenir" data-copy="Tout ce que demain peut encore offrir de beau."><span class="planet-core"></span><span>Avenir</span></button>
+            <button class="planet planet-secret" data-title="Secret" data-copy="Un petit monde réservé aux plus belles émotions."><span class="planet-core"></span><span>Secret</span></button>
+          </div>
+          <article class="planet-story" id="planetStory" aria-live="polite">
+            <p id="planetTitle">Choisis une planète</p>
+            <span id="planetCopy">Chaque monde garde une lumière particulière.</span>
+          </article>
+        </div>
+
+        <div class="universe-panel" id="surprises" role="tabpanel">
+          <h3 class="stage-heading">Le coin des surprises</h3>
+          <div class="surprise-garden">
+            <button class="surprise flower-surprise" data-message="Tu fais fleurir les beaux moments."><span class="surprise-icon">✿</span><span>Une fleur pour toi</span></button>
+            <button class="surprise star-surprise" data-message="Une étoile pour garder un peu de magie."><span class="surprise-icon">☆</span><span>Une étoile cachée</span></button>
+            <button class="surprise moon-surprise" data-message="Que tes soirées restent aussi douces que tes rêves."><span class="surprise-icon">☾</span><span>Une lune discrète</span></button>
+            <button class="surprise heart-surprise" data-message="Ce petit cœur contient beaucoup de tendresse."><span class="surprise-icon">♡</span><span>Un cœur secret</span></button>
+          </div>
+          <article class="surprise-reveal" id="surpriseReveal" aria-live="polite">
+            <span>✦</span>
+            <p>Choisis un objet caché</p>
+          </article>
+        </div>
+        <button class="stage-button" id="continueUniverse" hidden>Continuer la découverte ✨</button>
+        <button class="stage-button" id="continueReasons" hidden>Continuer la découverte ✨</button>
+        <button class="stage-button" id="continueSurprises" hidden>Continuer la découverte ✨</button>
+
+      </section>
+
+      <section id="finale" class="screen finale-screen" aria-label="Les cadeaux">
+        <header class="finale-header">
+          <p>UN CADEAU À LA FOIS</p>
+          <h2>Les huit cadeaux</h2>
+          <div class="gift-counter" aria-live="polite"><span id="giftOpenedCount">0</span> ouvert(s) · <span id="giftRemainingCount">8</span> à découvrir</div>
+        </header>
+        <div class="gift-room">
+            <button class="gift gift-1" data-gift="1" aria-label="Ouvrir le cadeau 1"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-2" data-gift="2" aria-label="Ouvrir le cadeau 2"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-3" data-gift="3" aria-label="Ouvrir le cadeau 3"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-4" data-gift="4" aria-label="Ouvrir le cadeau 4"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-5" data-gift="5" aria-label="Ouvrir le cadeau 5"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-6" data-gift="6" aria-label="Ouvrir le cadeau 6"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-7" data-gift="7" aria-label="Ouvrir le cadeau 7"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+            <button class="gift gift-8" data-gift="8" aria-label="Ouvrir le cadeau 8"><span class="gift-shadow"></span><span class="gift-lid"></span><span class="gift-box"></span><span class="gift-ribbon-v"></span><span class="gift-ribbon-h"></span><span class="gift-bow"></span><span class="gift-glow"></span></button>
+        </div>
+        <button class="stage-button" id="continueGifts" hidden>Continuer la découverte ✨</button>
+      </section>
+      <section id="birthdayFinal" class="screen birthday-final" aria-label="Happy Birthday Latifa">
+        <canvas id="confetti" aria-hidden="true"></canvas>
+        <div class="final-light" aria-hidden="true"></div>
+        <div class="final-content">
+          <p class="final-kicker">À toi, pour cette nouvelle année</p>
+          <h2 class="birthday-title" aria-label="HAPPY BIRTHDAY LATIFA">
+            <span>HAPPY</span> <span>BIRTHDAY</span> <span>LATIFA</span>
+          </h2>
+          <article class="final-message">
+            <p>Ton anniversaire est déjà passé, mais certaines attentions ne dépendent pas d'une date. Je voulais quand même prendre le temps de te préparer quelque chose de spécial. Parce que tu mérites qu'on célèbre ta présence, même lorsque le jour est déjà derrière nous.</p>
+            <p class="final-signature">Avec toute mon amitié ♡</p>
+          </article>
+          <button class="replay-celebration" id="replayCelebration">Revoir la célébration</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="gift-modal" id="giftModal" role="dialog" aria-modal="true" aria-labelledby="giftModalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+      <article>
+        <span class="modal-sparkle">✦</span>
+        <p>CADEAU <span id="giftNumber">1</span></p>
+        <h2 id="giftModalTitle">Une douce surprise</h2>
+        <div id="giftModalContent">Un instant de bonheur rien que pour toi.</div>
+      </article>
+    </div>
+
+    <div class="audio-controls" aria-label="Commandes audio">
+      <button id="musicToggle" aria-label="Activer la musique" aria-pressed="false">♫ <span>Musique</span></button>
+      <button id="effectsToggle" aria-label="Activer les effets sonores" aria-pressed="false">♪ <span>Effets</span></button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
